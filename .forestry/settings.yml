@@ -4,15 +4,17 @@ auto_deploy: false
 admin_path: 
 webhook_url: 
 sections:
-- type: document
-  path: README-FORESTRY.md
-  label: Help
-  read_only: true
+- type: heading
+  label: First Topic
 - type: directory
   path: content
   label: Pages
   create: all
   match: "*"
+- type: document
+  path: README-FORESTRY.md
+  label: Help
+  read_only: true
 upload_dir: static/uploads
 public_path: "/uploads"
 front_matter_path: ''
